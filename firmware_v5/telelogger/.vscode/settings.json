@@ -1,0 +1,14 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "*.tcc": "cpp",
+        "optional": "cpp",
+        "functional": "cpp",
+        "random": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp"
+    }
+}
