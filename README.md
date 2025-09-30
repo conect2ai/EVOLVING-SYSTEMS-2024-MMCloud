@@ -12,9 +12,30 @@
 
 ## 1. Abstract/Overview
 
-[ABSTRACT]
+The increasing integration of Internet of Things (IoT) technologies into modern vehicles has enabled real-time access to driving data. However, analyzing this information in embedded environments remains challenging due to the continuous nature of the data streams and the limited computational resources available. This study addresses these constraints by proposing an evolving online clustering approach for real-time monitoring of driver behavior. The proposed method integrates Tiny Machine Learning (TinyML) techniques with soft sensors derived from physical data captured via on-board diagnostics (OBD-II). Central to the system is the MMCloud algorithm, which incrementally updates clusters without requiring retraining, enabling adaptation to concept drift and evolving driving conditions. The methodology involves the real-time acquisition of vehicle signals, including speed, RPM, engine load, and throttle position, followed by the calculation of a soft-sensor metric known as radar area. The algorithm was deployed on a Freematics One+ device and validated through case studies conducted in varied urban driving conditions. The results indicate that the system can classify driver behavior into cautious, normal, and aggressive categories, achieving Silhouette Scores up to 0.83 and maintaining execution times between 600–700 µs in most cases. These findings suggest that the approach is suitable for embedded applications requiring adaptive, real-time behavior analysis.
 
-## 2. Environment Setup
+## 2. Repository Structure
+
+```bash
+EVOLVING-SYSTEMS-2024-MMCloud
+├── data/               # Datasets used in the experiments
+├── ESPRIT/             # Auxiliary scripts and methods (ESPRIT algorithm)
+├── figures/            # Figures and images for documentation
+├── firmware/           # Initial firmware implementation
+├── firmware_v2/        # Firmware version 2
+├── firmware_v3/        # Firmware version 3
+├── firmware_v4/        # Firmware version 4
+├── firmware_v5/        # Firmware version 5 (recommended)
+├── libraries/          # External and custom libraries
+├── maps/               # Map data generated after the experiments
+├── server/             # Server-side implementation for data collection
+├── experiment_analysis.ipynb  # Notebook for experiment analysis
+├── .gitignore          # Git ignore rules
+├── LICENSE             # Project license (MIT)
+└── README.md           # Project documentation
+```
+
+## 3. Environment Setup
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/)
 2. Install [PlatformIO](https://platformio.org/) (VSCode Extension)
